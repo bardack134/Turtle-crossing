@@ -26,7 +26,19 @@ while game_is_on:
     #La pantalla se va actualizar cada 0.1 segundos, dentro de nuestro while el codigo correra cada 0.1 segundos
     time.sleep(0.1)
     screen.update()
-    player.reset_position()
+    
+    
+    player_position=player.ycor()
+    
+    print(player_position)
+    
+    #si la posicion y es mayor a 270 
+    if player_position >270:
+        
+        player.reset_position()
+        print('el nivel del player debe subir en 1')
+        scoreboard.new_player_level()
+        
 
 
 

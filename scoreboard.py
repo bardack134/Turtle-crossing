@@ -28,3 +28,15 @@ class Scoreboard(Turtle):
         # level=1
         #escribe nivel del jugador
         self.write(f'Level: {self.user_level}', False, align='center', font=FONT)
+
+
+    #TODO: funcion que sube nivel y muestra el nuevo nivel
+    
+    def new_player_level(self):
+        self.user_level += 1
+        
+        self.clear()
+        
+        #escribe nivel del jugador
+        self.write(f'Level: {self.user_level}', False, align='center', font=FONT)
+        
