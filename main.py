@@ -8,6 +8,7 @@ from scoreboard import Scoreboard
 #TODO: configuracion del ancho y largo de la pantalla
 screen = Screen()
 screen.setup(width=600, height=600)
+screen.bgpic(picname="prueba.png")
 screen.tracer(0)
 
 player=Player()
