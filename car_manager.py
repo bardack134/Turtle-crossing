@@ -13,13 +13,13 @@ class CarManager(Turtle):
         # Llama al método de inicialización de la clase padre (Turtle).
         super().__init__()  
          # Establece la forma de los carros a 'square'.
-        # self.shape('square') 
+        self.shape('square') 
 
         # Levanta el lápiz de los carros para que no dibujen una línea cuando se mueven.
         self.penup() 
         
         # Establece el tamaño de los carros a 1 de alto y 2 de ancho.
-        # self.shapesize(stretch_wid=1, stretch_len=2)  
+        self.shapesize(stretch_wid=1, stretch_len=2)  
         
         # Llama al método para establecer un color aleatorio para los carros.    
         self.random_color()      
